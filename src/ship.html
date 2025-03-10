@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/ship.css">
+    <link rel="stylesheet" href="../CSS/nav.css">
+</head>
+
+<body>
+
+    <header class="d-flex flex-row justify-content-between align-items-center fluid-container-xs">
+        <nav class="d-flex flex-row container-xs">
+            <div class="m-1 p-1 " id="logo">
+                <img src="backgroung/Logo.png" alt="logo not found">
+            </div>
+            <div id="nav-section">
+                <ul class="d-flex flex-row m-1">
+                    <li><a href="/logged-in">Home</a></li>
+                    <li><a href="/ship">Ship</a></li>
+                    <li><a href="/track">Track Order</a></li>
+                    <li><a href="/logged-in#about-us">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="d-flex flex-row justify-content-center align-items-center">
+            <div class="search">
+                <input type="text" name="search" class="inline-form-control" placeholder="Search any Info">
+            </div>
+            <div class="but">
+                <button type="button" src="https://getbootstrap.com/docs/4.0/utilities/flex/" class="btn-new m-1 p-1 bg-info"><a href="/login/logout">Logout</a></button>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="center">
+        <div class="container">
+            <div class="center">
+                <div class="title">
+                    <h1>Fill The Below Form</h1>
+                </div>
+            </div>
+            <div class="form">
+                <form action="/ship/process-ship" method="post" onsubmit="return validateForm()">
+                    <div>
+                        <fieldset>
+                            <legend>Receiver Information</legend><br />
+                            <div class="name">
+                                <div class="box">First Name : <input type="text" name="_Fname" id="_Fname"></div>
+                                <div class="box">Middle Name : <input type="text" name="_Mname" id="_Mname"></div>
+                                <div class="box">Last Name : <input type="text" name="_Lname" id="_Lname"></div>
+                            </div>
+                            <div>
+                                <fieldset>
+                                    <legend>Address</legend>
+                                    <div class="box">House No / House Name: <input type="text" name="_Hno" id="_Hno">
+                                    </div>
+                                    <div class="box">Area Name : <br /><textarea name="_area" id="_area" required
+                                            cols="40" rows="3"></textarea> </div>
+                                    <div class="box"> City Name : <input type="text" name="_city" id="_city" required>
+                                    </div>
+                                    <div class="box">Pin Code : <input type="text" name="_pin" id="_pin" required></div>
+                                    <div class="box">State : <input type="text" name="_State" id="_state" required>
+                                    </div>
+                                    <div class="box">Country :
+                                        <select name="country" required>
+                                            <option value="India">India</option>
+                                            <option value="Bangladesh">Bangladesh</option>
+                                            <option value="Sri Lanka">Sri Lanka</option>
+                                            <option value="China">China</option>
+                                            <option value="Afghanistan">Afghanistan</option>
+                                        </select>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div>
+                                <div class="box">Contact No : <input type="tel" name="_num" id="_num" required> </div>
+                                <div class="box">Alternate No : <input type="tel" name="_alt" id="_alt"></div>
+                            </div>
+                            <div>
+                                <div class="box">Delivery Time :<br />
+                                    <input type="checkbox" name="_time1" id="_time1" value="8:00-12:00">
+                                    <label for="_time1">8:00-12:00</label><br />
+                                    <input type="checkbox" name="_time1" id="_time2" value="12:00-16:00">
+                                    <label for="_time2">12:00-16:00</label><br />
+                                    <input type="checkbox" name="_time1" id="_time3" value="16:00-20:00">
+                                    <label for="_time3">16:00-20:00</label><br />
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+            </div>
+            <div class="center">
+                <input  type="submit" class="track" value="Reset">
+                <input type="submit" class="track" value="Submit">
+            </div>
+            </form>
+            <br>
+        </div>
+    </div>
+    <script src="../ship.js"></script>
+</body>
+
+</html>

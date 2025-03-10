@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-image: url('courirer.jpg'); */
+    background-repeat: repeat-x;
+    /* background-color: orange; */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+body image{
+    z-index: -1;
+    background-repeat: no-repeat;
+    /* transition: ho; */
+    transform: scale(2,1);
+}
+
+.fluid-container-xs {
+    position: relative;
+}
+
+.flex-row {
+    align-items: center;
+}
+
+#nav-section ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+} 
+
+#nav-section li {
+    display: block;
+    margin: 10px;
+    padding: 5px;
+}
+
+#nav-section li a {
+    text-decoration: none;
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+#nav-section li a:hover {
+    background-color: black;
+    color: white;
+}
+
+#logo img {
+    width: 181px;
+    height: 70px;
+    opacity: invert(0);
+}
+
+.search {
+    margin: 5px;
+}
+
+.but {
+    margin-right: 10px;
+}
+
+.but a{
+    text-decoration: none;
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.btn-new {
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 15     px;
+}
+
+.fluid-container-xs::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #664f4f;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+
+.container{
+    height: 100%;
+}
+
+.login-form {
+    /* background-color: #748223; */
+    overflow: hidden;
+    backdrop-filter: blur(10px) contrast(150%) opacity(55%) ;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #a29393;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.form-options {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form-options a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+.form-options a:hover {
+    text-decoration: underline;
+}
+
+.tc{
+    text-shadow: #333333;
+}
+
+#ftr{
+    backdrop-filter: blur(40px) contrast(150%) opacity(85%);
+}
+
+#upper {
+    padding: 70px 40px 0;
+}
+
+#footer-logos img {
+    width: 20px;
+    height: 20px;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.list li {
+    margin: 10px;
+}
+
+.list a {
+    text-decoration: none;
+    color: black;
+}
+
+#lower {
+    width: 100%;
+    background-color: black;
+}
+
+.list1 {
+    margin: 0;
+}
+
+.list1 li {
+    margin: 10px;
+}
+
+.list1 a {
+    color: white;
+}
+
+.list span {
+    font-size: 2rem;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    background-color: orange;
+}
+
+
+#form-div {
+    margin-top: 0px;
+}
