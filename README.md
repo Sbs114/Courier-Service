@@ -33,7 +33,7 @@ SpeedyShip Courier Service is a web-based application designed to streamline cou
   - Nodemon for development server monitoring
 
 ## Home Page
-![](Images\HomePage.png)
+![](https://github.com/Sbs114/Courier-Service/blob/main/Images/HomePage.png)
 
 ## Folder Structure
 ```
